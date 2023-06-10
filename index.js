@@ -24,7 +24,7 @@ function temperature() {
         result.innerHTML = Rankine.toFixed(3) + " R"
     }
     else if (type1.value == "fahrenheit" && type2.value == "celcius") {
-        let Celcius = Number.parseInt(inputValue) - 32 * (5 / 9)
+        let Celcius = Number.parseInt((inputValue) - 32) * (5 / 9)
         result.innerHTML = Celcius.toFixed(3) + ` &deg;C`
     }
     else if (type1.value == "fahrenheit" && type2.value == "fahrenheit") {
@@ -32,7 +32,7 @@ function temperature() {
         result.innerHTML = Fahrenheit.toFixed(3) + " F"
     }
     else if (type1.value == "fahrenheit" && type2.value == "kelvin") {
-        let Kelvin = Number.parseInt(inputValue) - 32 * (5 / 9) + 273.15
+        let Kelvin = Number.parseInt((inputValue) - 32) * (5 / 9) + 273.15
         result.innerHTML = Kelvin.toFixed(3) + " K"
     }
     else if (type1.value == "fahrenheit" && type2.value == "rankine") {
@@ -44,7 +44,7 @@ function temperature() {
         result.innerHTML = Celcius.toFixed(3) + ` &deg;C`
     }
     else if (type1.value == "kelvin" && type2.value == "fahrenheit") {
-        let Fahrenheit = Number.parseInt(inputValue) - 273.15 * (9 / 5) + 32
+        let Fahrenheit = Number.parseInt((inputValue) - 273.15) * (9 / 5) + 32
         result.innerHTML = Fahrenheit.toFixed(3) + " F"
     }
     else if (type1.value == "kelvin" && type2.value == "kelvin") {
@@ -56,7 +56,7 @@ function temperature() {
         result.innerHTML = Rankine.toFixed(3) + " R"
     }
     else if (type1.value == "rankine" && type2.value == "celcius") {
-        let Celcius = Number.parseInt(inputValue) - 491.67 * (5 / 9)
+        let Celcius = Number.parseInt((inputValue) - 491.67) * (5 / 9)
         result.innerHTML = Celcius.toFixed(3) + ` &deg;C`
     }
     else if (type1.value == "rankine" && type2.value == "fahrenheit") {
