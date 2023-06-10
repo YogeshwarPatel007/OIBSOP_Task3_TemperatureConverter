@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.second{
+    display: flex;
+    background-color:black;
+    margin: 2% 1%;
+    justify-content: center;
+}
+.container {
+    /* box-shadow: 20px 20px 20px rgb(48, 58, 199); */
+    box-shadow: 20px 20px 20px rgb(127, 127, 132);
+    width: 338px;
+    background-color:rgb(36, 34, 34);
+    /* font-family: 'Lobster'; */
+    font-size: xx-large;
+    font-weight: 600;
+    height: 590px;
+    padding-left: 8%;
+}
+
+ h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 33px;
+    font-weight: 700;
+    margin-top: 2%;
+    color: aquamarine;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.third-one{
+    margin: 6% 0%;
+    color: darkgray;
+}
+#btn{
+    box-shadow: 6px 6px 6px rgb(127, 127, 132);
+    padding: 0.7%;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-bottom: 6%;
+    width: 61%;
+    color: azure;
+    background-color: darkcyan;
+    font-weight: 700;
+    font-size: 16px;
+    height: 30px;
+}
+.result{
+    color: darkgray;
+}
+#result{
+    color: aquamarine;
+    margin-top: 5%;
+    text-decoration: underline;
+}
+#inputValue{
+    box-shadow: 6px 6px 6px rgb(127, 127, 132);
+    border: 1px solid black;
+    width: 59%;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 26px;
+
+}
+#type1,#type2{
+    box-shadow: 6px 6px 6px rgb(127, 127, 132);
+    width: 28%;
+    border: 2px solid black;
+    height: 31px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+}
+#btn,#type1,#type2:hover{
+    cursor: pointer;
+}
+.footer{
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width:456px){
+    .container{
+        box-shadow: 16px 16px 16px rgb(127, 127, 132);
+        font-size: 18px;
+        width: 228px;
+        height: 370px;
+    }
+    #inputValue,#type1,#type2,#btn{
+        box-shadow: 4px 4px 4px rgb(127, 127, 132);
+        font-size: 13px;
+    }
+    h1{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width:320px){
+    .container{
+        font-size: 16px;
+        width: 160px;
+        height: 300px;
+    }
+    #inputValue,#type1,#type2,#btn{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 19px;
+    }
+    .footer{
+        font-size: 10px;
+    }
+    #type1,#type2,#btn{
+        width: 48%;
+        height: 22px;
+        box-shadow: 3px 3px 3px rgb(127, 127, 132);
+    }
+    #inputValue{
+        width: 79%;
+        height: 21px;
+        box-shadow: 3px 3px 3px rgb(127, 127, 132);
+    }
+}
+@media only screen and (max-width:200px){
+    .container{
+        font-size: 12px;
+        width: 120px;
+        height: 217px;
+        box-shadow: 12px 12px 12px rgb(127, 127, 132);
+    }
+    #inputValue,#type1,#type2,#btn{
+        font-size: 7px;
+    }
+    h1{
+        font-size: 16px;
+    }
+    .footer{
+        font-size: 7px;
+    }
+    #type1,#type2,#btn{
+        width: 49%;
+        height: 16px;
+        box-shadow: 2px 2px 2px rgb(127, 127, 132);
+    }
+    #inputValue{
+        width: 83%;
+        height: 15px;
+        box-shadow: 2px 2px 2px rgb(127, 127, 132);
+    }
+}
